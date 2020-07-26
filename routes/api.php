@@ -18,5 +18,5 @@ Route::get("okok", function () {
     return "working";
 });
 
-Route::post('input-profile', 'Api\\ApiAdminController@getBookingData');
-Route::post('admin/bookings/{id}', 'Admin\ApiAdminController@updateBookingData');
+Route::get('get-profiles', 'Api\ApiSystemController@index');
+Route::post('store-profile', 'Api\ApiSystemController@store');
